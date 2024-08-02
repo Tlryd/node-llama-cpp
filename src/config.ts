@@ -32,7 +32,7 @@ export const isCI = env.get("CI")
     .default("false")
     .asBool();
 export const defaultLlamaCppGitHubRepo = env.get("NODE_LLAMA_CPP_REPO")
-    .default("ggerganov/llama.cpp")
+    .default("tlryd/llama.cpp")
     .asString();
 export const defaultLlamaCppRelease = env.get("NODE_LLAMA_CPP_REPO_RELEASE")
     .default(await getBinariesGithubRelease())
